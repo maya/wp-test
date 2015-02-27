@@ -1,0 +1,32 @@
+/*
+Theme Name: Radcliffe Child
+Template: radcliffe
+Author: Child Theme Configurator
+Version: 1.0.1424984703
+Updated: 2015-02-26 21:05:03
+*/
+
+@charset "UTF-8";
+
+
+body, .post-content, .post-title, .widget-title, .widget-content {
+	font-family: Raleway,sans-serif;
+}
+
+.post-meta-top, .widget-title, .meta-title, .credits p, .main-menu a {
+  font-weight: normal;
+}
+
+p, .post-content p, .post-content sup {
+  font-weight: 300;
+}
+
+sup {
+	font-size: 70%;
+}
+
+.description {
+  color: #222;
+  font-size: 14px;
+  padding-top: 6px;
+}
