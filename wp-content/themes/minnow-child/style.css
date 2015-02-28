@@ -23,8 +23,41 @@ p {
   line-height: 2;
 }
 
+a {
+  color: #ffae2b;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  color: #cc6600;
+}
+
+.menu-toggle:hover {
+  background-color: transparent;
+}
+
+b, strong {
+  font-weight: 600;
+}
+
+.slide-menu a {
+  color: #777;
+  line-height: 2.2;
+}
+
+.slide-menu a:hover {
+  color: #ffae2b;
+}
+
+.widget ul li::before {
+  margin-right: 0;
+}
 .entry-title, .entry-title a, .entry-title a:visited {
   color: #333;
+}
+
+.entry-title {
+  font-size: 2.25em;
 }
 
 .site-branding {
@@ -51,13 +84,27 @@ p {
 .header-widget h2 {
   display: none;
 }
-.header-widget {
-  position: absolute;
-  top: 3em;
+
+.blog-tagline {
+  line-height: 1;
+  padding-top: 1.2em;
+  text-transform: uppercase;
+}
+.blog-tagline, .blog-title {
+  color: #fff;
+  font-weight: normal;
+  text-align: center;  
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);  
 }
 
 .site-header {
-  padding-top: 2.5em;
+  height: 200px;
+  padding-top: .7em;
+  background: url("http://localhost/wordpresstest/wp-content/uploads/2015/02/banner.jpg") no-repeat center center scroll; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .menu-toggle {
   display: none;
@@ -75,6 +122,17 @@ p {
   height: 2.3125rem; 
   font-family: inherit; 
   padding: 0.5rem;
+}
+
+.widget ul li::before {
+  content: "";
+}
+
+.widget-title {
+  color: #666;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 	
 /* GLOBALS */
@@ -109,9 +167,16 @@ p {
     display: table;
 }
 button, input[type="button"], input[type="reset"], input[type="submit"] {
+  border: 2px solid #ffae2b;
   border-radius: 5px;
+  color: #ffae2b;
   font-family: inherit;
   padding: 14px 1.5em;
+}
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+  background-color: #ffae2b;
+  border-color: #ffae2b;
+  color: #fff;
 }
 
 input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"] {
@@ -128,9 +193,10 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
     padding: 12px 15px;
 
     /* Styles */
-    background: #fff;
+    background: none;
     border-radius: 5px;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    /*box-shadow: 0 1px 0 rgba(0,0,0,0.2);*/
+    
     cursor: pointer;
     outline: none;
     -webkit-transition: all 0.3s ease-out;
@@ -140,17 +206,24 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
     transition: all 0.3s ease-out;
 }
 
+.header-label {
+  color: #fff;
+  font-size: .9em;
+  font-weight: 600;
+  text-transform: uppercase; 
+}
+
 .wrapper-dropdown-5:after { /* Little arrow */
     content: "";
     width: 0;
     height: 0;
     position: absolute;
     top: 50%;
-    right: 15px;
+    margin-left: 8px;
     margin-top: -3px;
     border-width: 6px 6px 0 6px;
     border-style: solid;
-    border-color: #ffae2b transparent;
+    border-color: #fff transparent;
 }
 
 .wrapper-dropdown-5 .dropdown {
@@ -161,11 +234,12 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
     right: 0;
 
     /* Styles */
-    background: #fff;
+    background: none repeat scroll 0 0 rgba(247, 245, 244, 0.95);
     border-radius: 0 0 5px 5px;
-    border: 1px solid rgba(0,0,0,0.2);
+    /*border: 1px solid rgba(0,0,0,0.2);*/
     border-top: none;
     border-bottom: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     list-style: none;
     margin: 0;
     -webkit-transition: all 0.3s ease-out;
@@ -180,18 +254,21 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 }
 
 .wrapper-dropdown-5 .dropdown li {
-    padding: 0 10px ;
+    
 }
 
 .wrapper-dropdown-5 .dropdown li a {
     display: block;
     text-decoration: none;
     color: #333;
-    padding: 10px 0;
+    padding: 10px;
     transition: all 0.3s ease-out;
-    border-bottom: 1px solid #e6e8ea;
+    /*border-bottom: 1px solid #e6e8ea;*/
 }
 
+.wrapper-dropdown-5 .dropdown li a:hover {
+  background: #fff;
+}
 .wrapper-dropdown-5 .dropdown li:last-of-type a {
     border: none;
 }
@@ -223,22 +300,46 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 }
 
 .wrapper-dropdown-5.active .dropdown {
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    /*border-bottom: 1px solid rgba(0,0,0,0.2);*/
     max-height: 400px;
 }
 
 /* No CSS3 support: none */	
 
+[class*='col-'] {
+  float: left;
+}
+.col-1-2 {
+  width: 50%;
+}
+.col-2-3 {
+  width: 66.66%;
+}
+.col-1-3 {
+  width: 33.33%;
+}
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+[class*='col-'] {
+  padding-right: 20px;
+}
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
 @media screen and (max-width: 700px) {
+  [class*='col-'] {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
   .header-widget {
-    display: none !important;
+    display: none;
   }
   .menu-toggle {
     display: block;
   }
-}
-.test-link {
-  color: lightblue;
-  height: 200px;
-  width: 200px;
 }

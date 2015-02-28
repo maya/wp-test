@@ -27,6 +27,8 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
+<div class="grid">
+  <div class=" col-1-2">
 		<div class="site-branding">
  		
 			<?php if ( function_exists( 'jetpack_the_site_logo' ) ) : ?>
@@ -38,16 +40,19 @@
       --->
       
     <a class="blog-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-      <img alt="Traveling Spoon" src="http://localhost/wordpresstest/wp-content/uploads/2015/02/logo1.png">
+      <img alt="Traveling Spoon" src="http://localhost/wordpresstest/wp-content/uploads/2015/02/logo-white.png">
     </a>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div>
-
+  </div>
+   
 		<?php if ( has_nav_menu ( 'social' ) ) : ?>
 			<?php wp_nav_menu( array( 'theme_location' => 'social', 'depth' => 1, 'link_before' => '<span class="screen-reader-text">', 'link_after' => '</span>', 'container_class' => 'social-links', ) ); ?>
 		<?php endif; ?>
 
+
  <!-- BEGIN CUSTOM HEADER WIDGET AREA -->
+ <div class="col-1-2">
     <?php if ( is_active_sidebar( 'header_1' ) ) : ?>
     	<div id="header-widget" class="header-widget widget-area" role="complementary">
     		<?php dynamic_sidebar( 'header_1' ); ?>
@@ -69,8 +74,13 @@
 			<?php if ( is_active_sidebar( 'sidebar-1' ) ) {
 				get_sidebar();
 			} ?>
-
 		</div>
+		</div>
+</div>
+
+     <h2 class="blog-tagline">Travel off the eaten path</h2>
+     <p class="blog-title">Traveling Spoon Blog</p>
+   
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

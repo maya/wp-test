@@ -18,7 +18,7 @@ add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css' );
 // BEGIN GOOGLE FONTS
 
 function load_fonts() {
-        wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Raleway:400,300');
+        wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Raleway:600,400,300');
         wp_enqueue_style( 'googleFonts');
     }
 
