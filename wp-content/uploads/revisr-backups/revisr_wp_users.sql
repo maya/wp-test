@@ -26,12 +26,12 @@ CREATE TABLE `wp_users` (
   PRIMARY KEY (`ID`),
   KEY `user_login_key` (`user_login`),
   KEY `user_nicename` (`user_nicename`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `wp_users` WRITE;
 /*!40000 ALTER TABLE `wp_users` DISABLE KEYS */;
-INSERT INTO `wp_users` VALUES (1,'maya','$P$BViCtAySQ2E0UZD5mo8Od0f2KY4yUE0','maya','maya33@gmail.com','','2015-01-12 08:22:36','',0,'maya');
+INSERT INTO `wp_users` VALUES (1,'maya','$P$BViCtAySQ2E0UZD5mo8Od0f2KY4yUE0','maya','maya33@gmail.com','','2015-01-12 08:22:36','$P$BUzg2iz/Rb3CmksewnBn32gbJ.2L6.0',0,'maya'),(2,'mbenari','$P$Bf2nv8rrqW/J9zXU5OngyLCvM4zk0B.','mbenari','hello@maya-benari.com','','2015-01-14 04:03:10','',0,'mbenari');
 /*!40000 ALTER TABLE `wp_users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
