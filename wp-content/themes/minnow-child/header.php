@@ -15,9 +15,6 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<script type='text/javascript' src='js/select.js'></script>
-<script type='text/javascript' src='js/codrops.js'></script>
-
 <?php wp_head(); ?>
 </head>
 
@@ -37,11 +34,12 @@
 			
 			<!-- SITE TITLE REMOVED
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-      --->
+      
       
     <a class="blog-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
       <img alt="Traveling Spoon" src="http://localhost/wordpresstest/wp-content/uploads/2015/02/logo-white.png">
     </a>
+    --->
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div>
   </div>

@@ -51,6 +51,12 @@
 
 	});
 
+  // Navbar search toggle function
+  $('.search-toggle').click(function(){
+    $('.search-toggle').toggleClass('search-active');
+    $('.search-form').fadeToggle('250');
+  });
+  
 </script>
 </body>
 </html>
