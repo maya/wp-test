@@ -11,25 +11,42 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-  	<span class=""> Traveling Spoon © 2014. All Rights Reserved </span>
-  	
-    <ul class="social">
-      <li>
-        <a target="_blank" href="https://www.facebook.com/travelingspoon">
-          <i class="fa fa-facebook fa-2x"></i>
-        </a>
-      </li>
-      <li>
-        <a target="_blank" href="https://twitter.com/travelingspoon">
-          <i class="fa fa-twitter fa-2x"></i>
-        </a>
-      </li>
-      <li>
-        <a target="_blank" href="http://instagram.com/travelingspoons">
-          <i class="fa fa-instagram fa-2x"></i>
-        </a>
-      </li>
-    </ul>
+  	<div class="grid">
+    	<div class="col-1-2 footer-info">
+      	<ul>
+        	<li>
+        	  <a href="/">Traveling Spoon</a>
+        	</li>
+        	<li>
+            <a href="#">About</a>
+        	</li>
+        	<li>
+        	  <a href="#">Destinations</a>
+        	</li>        	        	
+      	</ul>
+    	</div>
+
+    	<div class="col-1-2 footer-social">    
+      	<span> Traveling Spoon © 2014. All Rights Reserved </span>	
+        <ul class="social">
+          <li>
+            <a target="_blank" href="https://www.facebook.com/travelingspoon">
+              <i class="fa fa-facebook fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/travelingspoon">
+              <i class="fa fa-twitter fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="http://instagram.com/travelingspoons">
+              <i class="fa fa-instagram fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+    	</div>
+  	</div>
   	
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'minnow' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'minnow' ), 'WordPress' ); ?></a>

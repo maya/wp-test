@@ -59,7 +59,7 @@ b, strong {
   font-size: 2.25em;
 }
 
-.site-branding {
+.site-branding, .footer-info {
   padding-left: 0.9375em;
   text-align: left;
 }
@@ -103,9 +103,9 @@ b, strong {
 }
 
 .site-header {
-  height: 200px;
+  height: 250px;
   padding-top: .7em;
-  background: url("http://localhost/wordpresstest/wp-content/uploads/2015/02/banner.jpg") no-repeat center center scroll; 
+  background: url("http://localhost/wordpresstest/wp-content/uploads/2015/02/banner.jpg") no-repeat center -420px scroll; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -137,6 +137,39 @@ b, strong {
   font-size: 1.2em;
   font-weight: 600;
   text-transform: uppercase;
+}
+.social {
+  display: inline;
+}
+.footer-info {
+  padding-top: 7px;
+  text-align: left;
+}
+.footer-social {
+  text-align: right;
+}
+.footer-social .social {
+  padding-right: 0.9375em;
+}
+.footer-social span {
+  position: relative;
+  top: -6px;
+}
+.site-footer ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+.footer-info ul {
+  margin-left: 0;  
+}
+.footer-info li {
+  display: inline;
+}
+.footer-info li:after {
+  content: "|";
+}
+.footer-info li:last-child:after {
+  content: "";
 }
 	
 /* GLOBALS */
