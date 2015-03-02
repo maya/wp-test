@@ -263,7 +263,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 }
 .svg-line {
   stroke: #ffae2b;
-  stroke-width: 2;
+  stroke-width: 3;
 }
 .wrapper-dropdown-5 .dropdown .all-categories a {
   color: #ffae2b;
