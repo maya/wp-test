@@ -105,7 +105,7 @@ b, strong {
 .site-header {
   height: 250px;
   padding-top: .7em;
-  background: url("http://localhost/wordpresstest/wp-content/uploads/2015/02/banner.jpg") no-repeat center -420px scroll; 
+  background: url("http://localhost/wordpresstest/wp-content/uploads/2015/02/banner.jpg") no-repeat center 71% scroll; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
