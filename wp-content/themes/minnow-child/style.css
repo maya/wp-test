@@ -254,6 +254,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
     max-height: 35px;
     padding: 3px;
     stroke: #ffae2b;
+    stroke-width: 2px;
     width: 35px;
 }
 
@@ -460,12 +461,10 @@ footer .social li {
   padding-right: 0;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
   [class*='col-'] {
     width: 100%;
-  }
-}
-@media screen and (max-width: 500px) {
+  }  
   .site-logo-link {
     margin: 0 auto;
   }
